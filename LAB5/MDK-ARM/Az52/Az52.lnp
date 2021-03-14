@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"az52\startup_stm32f103x6.o"
+"az52\main.o"
+"az52\gpio.o"
+"az52\spi.o"
+"az52\tim.o"
+"az52\stm32f1xx_it.o"
+"az52\stm32f1xx_hal_msp.o"
+"az52\stm32f1xx_hal_gpio_ex.o"
+"az52\stm32f1xx_hal_spi.o"
+"az52\stm32f1xx_hal.o"
+"az52\stm32f1xx_hal_rcc.o"
+"az52\stm32f1xx_hal_rcc_ex.o"
+"az52\stm32f1xx_hal_gpio.o"
+"az52\stm32f1xx_hal_dma.o"
+"az52\stm32f1xx_hal_cortex.o"
+"az52\stm32f1xx_hal_pwr.o"
+"az52\stm32f1xx_hal_flash.o"
+"az52\stm32f1xx_hal_flash_ex.o"
+"az52\stm32f1xx_hal_exti.o"
+"az52\stm32f1xx_hal_tim.o"
+"az52\stm32f1xx_hal_tim_ex.o"
+"az52\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Az52\Az52.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Az52.map" -o Az52\Az52.axf
